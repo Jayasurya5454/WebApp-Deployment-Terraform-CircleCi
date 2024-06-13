@@ -37,7 +37,7 @@ resource "aws_security_group" "instance_sg" {
 }
 
 resource "aws_instance" "example_instance" {
-  ami                    = "ami-0e1d06225679bc1c5"  
+  ami                    = "ami-08a0d1e16fc3f61ea"  
   instance_type          = "t2.micro"
   key_name               = "jaya"  
   security_groups        = [aws_security_group.instance_sg.name]
